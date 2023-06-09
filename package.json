@@ -1,0 +1,42 @@
+{
+  "name": "boiler-plate",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "svgs": "npx @svgr/cli -d src/assets/svgs/components src/assets/svgs --filename-case kebab"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.29.7",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.2.3",
+    "change-object-case": "^0.2.1",
+    "formik": "^2.2.9",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "node-sass": "^9.0.0",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.4",
+    "react-cache-buster": "^0.1.8",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^8.0.1",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.41.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "sass": "^1.62.1",
+    "vite": "^4.3.2"
+  }
+}
