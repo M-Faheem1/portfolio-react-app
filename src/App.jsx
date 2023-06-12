@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Routing } from '@/routes';
 import { useSetupAxios } from '@/services';
 import './App.scss';
+import Home from './pages/homePage/Home';
 
 const queryClient = new QueryClient();
 
@@ -13,7 +14,8 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <div className='App'>
-          <Routing />
+          <Home />
+          {/* <Routing /> */}
         </div>
       </BrowserRouter>
     </QueryClientProvider>
