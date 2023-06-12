@@ -11,7 +11,7 @@ function MyStory() {
 					<h3>My Long Story Short</h3>
 				</div>
 				<div class='my-story__profile-description__image-wrapper'>
-					<img src='/src/assets/images/profile-image.png' alt='' />
+					<img src='/public/images/profile-image.png' alt='' />
 				</div>
 				<div class='my-story__profile-description__heading-subheading'>
 					<h4>Mehedi Hasan</h4>
