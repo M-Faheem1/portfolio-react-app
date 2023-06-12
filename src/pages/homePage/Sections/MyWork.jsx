@@ -3,6 +3,10 @@ import WorkMethodListing from '../components/WorkMeathodListing';
 import WorkCardListing from '../components/WorkCardListing';
 import CustomButton from '@/common/components/CustomButton';
 import SvgThisWaySvg from '@/assets/svgs/components/this-way-svg';
+import WorkMethodListItem from '../components/WorkMeathodListItem';
+import SvgVisualDesignSvg from '@/assets/svgs/components/visual-design-svg';
+import SvgCaseStudySvg from '@/assets/svgs/components/case-study-svg';
+import SvgProjectsSvg from '@/assets/svgs/components/projects-svg';
 
 function MyWork() {
 	return (
@@ -15,7 +19,11 @@ function MyWork() {
 					</p>
 				</div>
 				<div className='my-work__methods'>
-					<WorkMethodListing />
+					<ul className='my-work__methods__list'>
+						<WorkMethodListItem svg={<SvgVisualDesignSvg />} meathodName={'Visual Design'} />
+						<WorkMethodListItem svg={<SvgCaseStudySvg />} meathodName={'Case Study'} />
+						<WorkMethodListItem svg={<SvgProjectsSvg />} meathodName={'Projects'} />
+					</ul>
 				</div>
 			</div>
 			<div className='my-work__detail'>
